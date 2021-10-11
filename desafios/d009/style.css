@@ -1,0 +1,37 @@
+body{
+    background-color: black;
+    font: normal 10pt Arial;
+    color: white;
+    text-align: center;
+}
+
+/*div#html_css{
+    margin-top: 15px;
+}*/
+
+/*div#hrdwre{
+    margin-top: 15px;
+}*/
+
+/*div#js{
+    margin-top: 15px;
+}*/
+
+/*div#py{
+    margin-top: 15px;
+}*/
+
+div#external_link{
+    color: white;
+    font: normal 13pt Arial;
+    text-align: center;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+p:hover{
+    text-decoration: underline;
+}

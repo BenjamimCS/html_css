@@ -1,0 +1,11 @@
+cabeçalho
+    degradê: #3BD982-#195B38
+
+bg-color
+    #84E1AD
+
+titulos, sub etc.
+    #1A5C37
+
+links
+    

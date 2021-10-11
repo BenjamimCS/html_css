@@ -1,0 +1,151 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: idroid;
+    src: url(fonts/idroid.otf) format("opentype");
+}
+
+:root{
+    --cor0: #c5ebd6;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa868;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+
+    --font-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --font-destaque: 'Bebas Neue', cursive;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    margin: -8px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.418);
+    font-family: var(--font-destaque), cursive;
+    font-weight: normal;
+    text-align: center;
+    height: 200px;
+    background-image: linear-gradient(to top, #195B38, #3BD982);
+}
+
+header > h1{
+    margin: 0px;
+    padding-top: 30px;
+    padding-bottom: 22px;
+}
+
+header > p{
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    padding-bottom: 29px;
+}
+
+nav{
+    margin: -26px;
+    margin-left: 0px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    padding-left: 20px;
+    padding-bottom: 30px;
+}
+
+nav > a{
+    color: white;
+    text-decoration: none;
+    padding: 0px 10px;
+}
+
+main{
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    font-weight: normal;
+    font-size: 11pt;
+    padding: 2px 15px;
+    width: 750px;
+    border-radius: 0px 0px 10px 10px;
+    background-color: white;
+}
+
+article > h1, h2{
+    font-family: idroid;
+    color: #1A5C37;
+}
+
+h2{
+    background-image: linear-gradient(to right, rgba(89, 223, 89, 0.664), white);
+    padding-left: 15px;
+}
+
+div#android{
+    margin-bottom: 20px;
+    padding: 30px;
+    padding-left: 59px;
+    background-color: #1A5C37;    
+}
+
+a{
+    color: #1A5C37;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+aside{
+    margin: 0px 0px 10px 0px;
+    padding: 1px 15px;
+    background-color: var(--cor0);
+    height: 419px;
+    width: 720px;
+    border-radius: 0px 0px 15px 15px;
+}
+
+h3{
+    padding: 8px 0px 8px 15px;
+    color: white;
+    border-radius: 15px 15px 0px 0px;
+    background-color: var(--cor3);
+}
+
+abbr{
+    text-decoration: none;
+}
+
+footer{
+    font: bold 10.5pt Arial;
+    color: rgb(255, 255, 255);
+    margin: 12px -8px -8px;
+    padding: 8px 0px 8px 0px;
+    text-align: center;
+    background-color: var(--cor5);
+}
+
+footer > p{
+    margin: 0px;
+}
+
+footer > p > span{
+    color: #6ee2a2d3;
+}
+
+footer > p > a{
+    color: white;
+}
+
+span{
+    color: #1A5C37;
+    font-weight: bolder;
+}
+
+body{
+    background-image: none linear-gradient(to top, white black);
+    background-color: #c5ebd6;
+}
