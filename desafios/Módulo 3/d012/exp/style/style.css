@@ -8,6 +8,11 @@
     padding: 0;
 }
 
+html, body{
+    min-height: 100vh;
+    background-color: darkgray;
+}
+
 :root{
     --fontPrim: 'Passion One';
     --fontPoem: 'Sriracha';
@@ -15,7 +20,8 @@
 }
 
 header{
-    padding: 63px;
+    max-width: 100vw;
+    /*padding: 63px;*/
     text-align: center;
     font-family: var(--fontPrim);
     font-weight: 700;
@@ -24,37 +30,46 @@ header{
     background-color: black;
 }
 
-header h1{
-    text-transform: uppercase;
+header > h1{
+    padding-top: 50px;
+    font-variant: small-caps;
 }
 
-header p{
+header > p{
+    padding-bottom: 50px;
     font-family: var(--othrFont);
     font-weight: normal;
     font-size: 0.28em;
 }
 
-header a{
-   
-    color: white;
+ a{
     text-decoration: none;
+    font-weight: bold;
+    color: white;
+    
+}
+
+a:hover{
+    text-decoration: underline;
 }
 
 section{
-    padding: 70px 30px;
-    line-height: 2.1em;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 2em;
     font-family: var(--fontPoem);
     font-size: 3em;
 }
 
-
-
 .noBg{
+    color: black;
     background-color: white;
 }
 
 .Bg{
     color: white;
+    background-color: rgb(51, 51, 51);
     background-image: url("../../imagens/background001.jpg");
     background-position: center center;
     background-repeat: no-repeat;
@@ -65,7 +80,7 @@ section{
 .Bg p{
     display: inline-block;
     padding: 5px;
-    background-color: rgba(0, 0, 0, 0.56);
+    background-color: rgba(0, 0, 0, 0.24);
 }
 
 footer{
@@ -76,12 +91,6 @@ footer{
     background-color: black;
 }
 
-footer a, footer abbr{
-    text-decoration: none;
-    font-weight: 600;
-    color: white;
-}
-
-footer a:hover{
-    text-decoration: underline;
+footer abbr{
+    text-decoration: none; 
 }
