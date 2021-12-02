@@ -52,6 +52,10 @@ a:hover{
     text-decoration: underline;
 }
 
+abbr{
+    text-decoration: none; 
+}
+
 section{
     padding-top: 10vh;
     padding-bottom: 10vh;
@@ -88,8 +92,4 @@ footer{
     font-family: var(--othrFont);
     color: white;
     background-color: black;
-}
-
-footer abbr{
-    text-decoration: none; 
 }
