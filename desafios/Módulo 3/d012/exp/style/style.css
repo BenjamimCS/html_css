@@ -10,6 +10,7 @@
 
 html, body{
     min-height: 100vh;
+    font-family: var(--othrFont);
     background-color: darkgray;
 }
 
@@ -33,11 +34,12 @@ header{
 header > h1{
     padding-top: 50px;
     font-variant: small-caps;
+    font-size: 10vw;
 }
 
 header > p{
-    padding-bottom: 50px;
-    font-family: var(--othrFont);
+    padding-bottom: 50px;  
+    font-family: var(--othrFont);  
     font-weight: normal;
     font-size: 0.28em;
 }
@@ -62,27 +64,41 @@ section{
     padding-left: 30px;
     line-height: 2em;
     font-family: var(--fontPoem);
-    font-size: 3em;
+    font-size: 3.5vw;
 }
 
-.noBg{
+section p{
+    padding-bottom: 2em;
+}
+
+section.noBg{
     color: black;
     background-color: white;
 }
 
-.Bg{
-    color: white;
-    background-color: rgb(51, 51, 51);
+section#img-01{
     background-image: url("../../imagens/background001.jpg");
-    background-position: center center;
+    background-position: right center;
+}
+
+section#img-02{
+    background-image: url("../../imagens/background002.jpg");
+}
+
+section.Bg{
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.336);
+
+    background-color: rgb(51, 51, 51);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
 
-.Bg p{
+section.Bg p{
     display: inline-block;
     padding: 5px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.767);
     background-color: rgba(0, 0, 0, 0.24);
 }
 
