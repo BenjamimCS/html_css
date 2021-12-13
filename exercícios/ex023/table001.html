@@ -11,7 +11,16 @@
             background-color: rgb(218, 187, 131);
         }
 
-        h1{
+        #conteiner{
+            display: inline-block;
+        }
+
+        #conteiner > .h1-area{
+            display: block;
+            text-align: center;
+        }
+
+        .h1-area > h1{
             display: inline-block;
             padding-bottom: 5px;
             color: whitesmoke;
@@ -43,35 +52,39 @@
     </style>
 </head>
 <body>
-    <h1>
-        &#x1F44C; Minha primeira tabela
-        
-    </h1>
+    <div id="conteiner">
+        <div class="h1-area">
+            <h1>
+                <!--&#x1F44C;-->Fazendo uma tablea
+            
+            </h1>
+        </div>
 
-    <table>
-        <th>Col. 1
-        <th>Col. 2
-        <th>Col. 3
+        <table>
+            <th>Col. 1
+            <th>Col. 2
+            <th>Col. 3
         
-        <tr>            
-            <td>A1
-            <td>B1
-            <td>C1
+            <tr>
+                <td>A1
+                <td>B1
+                <td>C1
         
-        <tr>
-            <td>A2
-            <td>B2
-            <td>C3
+            <tr>
+                <td>A2
+                <td>B2
+                <td>C3
         
-        <tr>
-            <td>A3
-            <td>B3                
-            <td>C3
+            <tr>
+                <td>A3
+                <td>B3
+                <td>C3
         
-        <tr>
-            <td>A4
-            <td>B4
-            <td>C4
-    </table>
+            <tr>
+                <td>A4
+                <td>B4
+                <td>C4
+        </table>
+    </div>
 </body>
 </html>
