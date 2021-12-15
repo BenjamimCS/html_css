@@ -5,53 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas 1</title>
-    <style>
-        body{
-            font-family: Helvetica, Arial, sans-serif;
-            background-color: rgb(218, 187, 131);
-        }
-
-        #conteiner{
-            display: inline-block;
-        }
-
-        #conteiner > .h1-area{
-            display: block;
-            text-align: center;
-        }
-
-        .h1-area > h1{
-            display: inline-block;
-            padding-bottom: 5px;
-            color: whitesmoke;
-            border-bottom: 3px solid whitesmoke;
-        }
-
-        table{
-            height: 400px;
-            width: 385px;
-            border-collapse: collapse;
-        }
-
-        th{
-            padding: 5px 20px;
-            border: 1px solid black;
-        }
-
-        tr:nth-child(odd){
-            background-color: whitesmoke;
-        }
-
-        tr:nth-child(even){
-            background-color: rgba(184, 151, 184, 0.418);
-        }
-
-        td{            
-            padding: 5px 20px;
-            text-align: center;
-            border: 1px solid black;
-        }
-    </style>
+    <link rel="stylesheet" href="table-styles.css">
 </head>
 <body>
     <div id="conteiner">
@@ -61,7 +15,7 @@
             </h1>
         </div>
 
-        <table>
+        <table style="height: 400px; width: 385px;">
             <th>Col. 1
             <th>Col. 2
             <th>Col. 3
