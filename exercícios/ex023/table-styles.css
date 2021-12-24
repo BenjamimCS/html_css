@@ -22,6 +22,7 @@ body{
 }
 
 table{
+    position: relative;
     width: 400px;
     border-collapse: collapse;
 }
@@ -38,8 +39,14 @@ caption{
     background-color: whitesmoke;
 }
 
-tr > td:last-child{
-    text-align: right;
+thead > tr > th{
+    position: sticky;
+    top: -1px;
+    background-color: whitesmoke;
+}
+
+th:nth-child(even){
+    background-color: #e6e6e6;
 }
 
 th, td{
@@ -47,10 +54,9 @@ th, td{
     border: 1px solid black;
 }
 
-th:nth-child(even){
-    background-color: #e6e6e6;
+tr > td:last-child{
+    text-align: right;
 }
-
 tr:nth-child(odd){
     background-color: whitesmoke;
 }
