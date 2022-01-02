@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+body{
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: rgb(218, 187, 131);
+}
+
+table{
+    position: relative;
+    width: 650px;
+    height: 280px;
+    border-collapse: collapse;
+}
+
+caption{
+    margin-bottom: 5px;
+    padding: 10px;
+    font-size: 1.3em;
+    font-weight: bold;
+    border: 2px solid black;
+    background-color: whitesmoke;
+}
+
+tr:nth-child(even) > td{
+    background-color: rgb(223, 223, 223);
+}
+
+th, td{
+    padding: 0px 15px;
+    border: 2px solid black;
+    background-color: rgb(243, 243, 243);
+}
+
+th{
+    color: whitesmoke;
+    background-color: rgb(99, 99, 99);
+}
+
+th.average{
+    text-align: left;
+}
+
+td{
+    text-align: center;
+}
