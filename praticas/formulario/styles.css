@@ -40,26 +40,59 @@ input{
 main{
     margin: 0 auto;
     margin-top: 45px;
-
-    max-width: 480px;
-
-    background-color: rgb(211, 211, 211);
+    max-width: 800px;
 }
 
-main form{
-    margin-top: 25px;
+#register{
+    margin: 0 auto;
+    max-width: 480px;
+    height: 350px;
 
+    background-color: #d3d3d3;
+}
+
+main #register{
+    padding: 10px;
+}
+
+main #register h1{
+    margin: -10px -10px 0px -10px;
+    padding: 10px;
+
+    text-align: center;
+    color: whitesmoke;
+    background-color: black;
+}
+
+main #register-area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 89%;
+}
+
+#register form{
     text-align: center;
 }
 
-main form > input{
+#register form > input{
     margin: 10px 0px;
     padding: 8px 10px;
 
+    font-weight: bold;
 }
 
-main form > input[type="submit"]{
+#register .register-area-form-input_title{
+    display: block;
+
     font-weight: bold;
+}
+
+#register .register-area-form-input{
+    font-size: .9em;
+}
+
+#register form > input[type="submit"]{
     font-size: 0.9em;
     color: whitesmoke;
     cursor: pointer;
@@ -69,25 +102,6 @@ main form > input[type="submit"]{
     background-color: black;
 }
 
-main form > input[type="button"]:focus{
+#register form > input[type="button"]:focus{
     border: 2px solid whitesmoke;
-}
-
-main #cadastro{
-    padding: 10px;
-}
-
-main #cadastro h1{
-    margin: -10px -10px 0px -10px;
-    padding: 10px;
-
-    text-align: center;
-    color: whitesmoke;
-    background-color: black;
-}
-
-main #cadastro .input-title{
-    display: block;
-
-    font-weight: bold;
 }
