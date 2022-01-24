@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Forms and Validations</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<header>
+		<h1>Logo</h1>
+		<nav>
+			<ul>
+				<li>
+					<a href="#">Home</a>
+				<li>
+					<a href="#">Novidades</a>
+				<li>
+					<a href="#">FAQ</a>
+				<li>
+					<a href="#">Sobre</a>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section id="cadastro">
+			<h1>Preencha os dados</h1>
+			<form method="post" action="./valid.php" autocomplete="on">
+				<span class="input-title">Email</span>
+				<input name="id-email" type="email" required maxlength="40">
+				
+				<span class="input-title">Senha</span>
+				<input name="id-pass" type="password" required>
+				<br>
+				<input type="submit" value="Entrar">
+			</form>
+		</section>
+	</main>
+</body>
+</html>
