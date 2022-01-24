@@ -1,7 +1,7 @@
 <?php
 
-    $email = $_POST["id-email"];
-    $pass = $_POST["id-pass"];
+    $email = isset($_POST["id-email"]) ? $_POST["id-email"] : '<em>undefined</em>';
+    $pass = isset($_POST["id-pass"]) ? $_POST["id-pass"] : '<em>undefined</em>';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -34,7 +34,7 @@
             <div 
             style='background-color: #d3d3d3;padding: 10px;width: 350px;'>
                 <b>Email:</b> $email<br>
-                <b>Senha:</b>$pass
+                <b>Senha:</b> $pass
             </div>";
         ?>
     </main>
