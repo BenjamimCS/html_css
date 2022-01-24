@@ -34,7 +34,7 @@
             <div 
             style='background-color: #d3d3d3;padding: 10px;width: 350px;'>
                 <b>Email:</b> $email<br>
-                <b>Senha:</b>$pass
+                <b>Senha:</b> $pass
             </div>";
         ?>
     </main>
