@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Responsivas</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+
+            font-family: Helvetica, Arial,sans-serif;
+        }
+
+        table{
+            /*margin: 15px auto 0px auto;*/
+            border-collapse: collapse;
+
+            overflow-x: scroll;
+        }
+
+        caption{            
+            margin: 0px 0px 10px 0px;
+            padding: 10px 15px;
+
+            font-size: 0.8em;
+
+            border: 3px solid black;
+        }
+
+        th,td{
+            padding: 5px 15px;
+
+            text-align: center;
+            vertical-align: middle;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption><h1>Venda de Carros</h1></caption>
+        <thead>
+            <tr>
+                <th scope="col">Marca
+                <th scope="col">Modelo
+                <th scope="col">Ano
+                <th scope="col">Portas
+                <th scope="col">Bancos
+                <th scope="col">Bancos
+                <th scope="col">Bancos
+                <th scope="col">Bancos
+                <th scope="col">Bancos
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="2" scope="rowgroup">Toyota
+                <td>Celica GTS
+                <td>2004
+                <td>2
+                <td>5
+            <tr>
+                <td>Supra
+                <td>1999
+                <td>2
+                <td>5
+            <tr>
+                <td>Nissan
+        </tbody>
+    </table>
+</body>
+</html>
