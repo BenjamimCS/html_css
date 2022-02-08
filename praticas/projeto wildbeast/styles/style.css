@@ -33,7 +33,7 @@ li{
     /* === Colors ===*/
     --color1: #8844ee; /* beauty purple */
     --color2: #B07DFB; /* beauty light purple */
-    --color3: #fafbfc; /* beaty whitesmoke */
+    --color3: #fafbfc; /* beauty whitesmoke */
     --color4: rgba(255,255,255,.90);
     --box-shadow-color: rgba(44,44,44,0.15);
     
@@ -285,13 +285,17 @@ blockquote p{
     background: var(--side-nav-ad-bg-color);
 }
 
+#advertising-area a {
+    display: block;
+}
+
 #advertising-area img{
     display: block;
     
     border-radius: var(--stdrt-radius);
 }
 
-#advertising-area img + img{
+#advertising-area a + a{
     margin-top: var(--stdrt-gap);
 }
 
