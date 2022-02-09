@@ -160,7 +160,6 @@ main img{
 
 /* === Info Area === */
 #info-area{
-    grid-column: 2/-1;
     display: flex;
     align-items: flex-start;
 }
@@ -279,24 +278,20 @@ blockquote p{
 /* === Ad ===*/
 #advertising-area{
     grid-area: ad;
+
+    display: grid;
+    grid-gap: var(--stdrt-gap);
+    align-content: start;
     
     padding: var(--stdrt-gap);
     
     background: var(--side-nav-ad-bg-color);
 }
 
-#advertising-area a {
-    display: block;
-}
-
-#advertising-area img{
+#advertising-area img, #advertising-area a{
     display: block;
     
     border-radius: var(--stdrt-radius);
-}
-
-#advertising-area a + a{
-    margin-top: var(--stdrt-gap);
 }
 
 /* === Footer ===*/

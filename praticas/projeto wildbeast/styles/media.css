@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+@media (max-width: 1200px){
+    #wrapper{
+        grid-template-areas:
+            "header header header"
+            "sidenav main main"
+            "sidenav ad ad"
+            "footer footer footer"
+        ;
+    }
+
+    #advertising-area{
+        grid-template-columns: repeat(2,minmax(150px,350px));
+        justify-content: center;
+       
+    }    
+}
+
+@media (max-width: 740px){
+    #wrapper{
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "sidenav"
+            "main"
+            "ad"
+            "footer"
+        ;
+    }
+
+    header {
+        flex-direction: column;
+    }
+    
+    header #logo img{
+        margin-bottom: var(--stdrt-gap);
+
+        width: 290px;
+    }
+
+    main{
+        grid-template-columns: 1fr;
+
+        text-align: justify;
+    }
+
+    #sidenav{
+        position: relative;
+        overflow-x: auto;
+    }
+    
+    @keyframes loop {
+        from{
+            right: 40px;   
+        }
+
+        to{
+            right: 30px;
+        }
+    }
+
+    #sidenav::after{
+        position: absolute;
+        top: 5px;
+        right: 30px;
+
+        content: "→";
+
+        color: rgba(0, 0, 0, .3);
+
+        animation: loop .5s ease-in 0s infinite alternate;
+    }
+
+    #sidenav ul{
+        display: flex;
+    }
+
+    #sidenav li{
+        flex: 1 0 60px;
+    }
+
+    #sidenav li + li{
+        margin-left: var(--stdrt-gap);
+    }
+
+    #sidenav a{
+        margin-bottom: 0;
+    }
+}
