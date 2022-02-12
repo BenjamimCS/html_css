@@ -13,13 +13,13 @@
 - cor 5 - cinza mais um pouco claro: #a4a4a4
 - cor 6 - whitesmoke clarin: #f7f7f7
 
-##### Protudos
+##### Produtos
 - purple: #ae81f
 - pink: #f9265e
 - blue: #66d9eb
 
 #### Propriedades
-- conteiner max-width: 960px
+- contêiner max-width: 960px
 - produtos span de item: 300px
 - gap-1: 10px
 - gap-2: 15px

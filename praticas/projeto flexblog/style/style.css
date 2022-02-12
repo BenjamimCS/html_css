@@ -116,6 +116,10 @@ input[button]{
     padding: var(--gap-1);
 }
 
+.header-area a:hover{
+    color: var(--color-2);
+}
+
 /* Intro */
 .intro-area{
     max-width: var(--stdrt-max-width);
@@ -137,15 +141,13 @@ input[button]{
     
     max-width: var(--stdrt-max-width);
     margin: 0 auto;  
-    padding: var(--gap-3) 0;
+    padding: var(--gap-3) var(--gap-1);
 
     border-bottom: var(--stdrt-stroke);
 }
 
 .about-area-text{
     flex: 2 1 300px;
-    
-    margin: 0 var(--gap-1);
 }
 
 .about-area h1{
@@ -162,14 +164,14 @@ input[button]{
 }
 
 .about-area-img{
-    flex: 1 1 160px;
+    flex: 1 1 150px;
     align-self: flex-start;
     margin: 0 var(--gap-1);
-}
+}/*
 
 .about-area-img img + img{
     margin: 0 0 0 5px;
-}
+}*/
 
 /* PRODUCTS */
 .products-area{
@@ -178,13 +180,13 @@ input[button]{
     
     max-width: var(--stdrt-max-width);
     margin: 0 auto;
-    padding: var(--gap-3) 0;
+    padding: var(--gap-3) var(--gap-1);
 }
 
 .products-area h1{
     flex: 1 1 100%;
     
-    padding: 0 var(--gap-1) var(--gap-3) var(--gap-1);
+    padding: 0 0 var(--gap-3) 0;
     
     font-size: var(--font-size-1);
     color: var(--color-1);
@@ -194,9 +196,13 @@ input[button]{
     flex: 1 1 220px;
     align-self: flex-end;
     
-    margin: var(--gap-1) var(--gap-1) 0;
+    margin: var(--gap-1) 0 0;
     
     background: var(--color-6);
+}
+
+.products-area-items + .products-area-items{
+    margin-left: var(--gap-1);
 }
 
 .products-area-items h2{
@@ -229,14 +235,14 @@ input[button]{
 
     max-width: 1200px;
     margin: 0 auto;
-    padding: var(--gap-3);
+    padding: var(--gap-3) var(--gap-1);
 }
 
 .prices-area-plans{
-    flex: 1 1 0;
+    flex: 1 1 200px;
     align-self: flex-end;
     margin: var(--gap-2);
-    padding: var(--gap-2) var(--gap-3);
+    padding: var(--gap-2) var(--gap-5);
 
     border: var(--border-2);
 }
