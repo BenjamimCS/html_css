@@ -6,8 +6,8 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: var(--stdrt-font);
-    box-sizing: border-box;
+    font-family: var(--stdrt-font);/*
+    box-sizing: border-box;*/
 }
 
 :root{
@@ -39,6 +39,11 @@
     --font-size-2: 2.25rem;
     --border-2: 4px solid white;
     --border-4: 8px solid; /* Used on Qualities */
+}
+
+img{
+    display: block;
+    max-width: 100%;
 }
 
 a{
@@ -95,6 +100,7 @@ ul{
 
 .header-area ul{
     display: flex;
+    flex-wrap: wrap;
     
     font-size: 1.2rem;
 }
@@ -118,6 +124,7 @@ ul{
     line-height: 1.3;
 }
 
+/* ABOUT */
 .about-area{
     display: flex;
     flex-wrap: wrap;
@@ -125,6 +132,7 @@ ul{
     max-width: var(--stdrt-max-width);
     margin: 0 auto;  
     padding: var(--gap-3) 0;
+
     border-bottom: var(--stdrt-stroke);
 }
 
@@ -132,20 +140,6 @@ ul{
     flex: 2 1 300px;
     
     margin: 0 var(--gap-1);
-}
-
-.about-area-img{
-    flex: 0 1 230px;
-    align-self: flex-start;
-    margin: 0 var(--gap-1);
-}
-
-.about-area img{
-    max-width: 100%;
-}
-
-.about-area-img img + img{
-    margin: 0 0 0 5px;
 }
 
 .about-area h1{
@@ -160,6 +154,16 @@ ul{
     color: var(--color-4);
 }
 
+.about-area-img{
+    flex: 1 1 160px;
+    align-self: flex-start;
+    margin: 0 var(--gap-1);
+}
+
+.about-area-img img + img{
+    margin: 0 0 0 5px;
+}
+
 /* PRODUCTS */
 .products-area{
     display: flex;
@@ -170,11 +174,6 @@ ul{
     padding: var(--gap-3) 0;
     
     border-bottom: var(--stdrt-stroke);
-}
-
-.products-area img{
-    display: block;
-    max-width: 100%;
 }
 
 .products-area h1{
