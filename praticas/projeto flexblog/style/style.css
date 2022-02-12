@@ -1,0 +1,215 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* === GLOBAL SETS === */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--stdrt-font);
+    box-sizing: border-box;
+}
+
+:root{
+    /* === FONTS === */
+    --stdrt-font: 'Nunito', Helvetica, Arial, sans-serif;
+    
+    /* === Colors === */
+    --color-1: #222222; /* Black */
+    --color-2: #122ab2; /* Dark Blue */
+    --color-3: #2c70ff; /* Light Blue */
+    --color-4: #7c7c7c; /* Light Gray */
+    --color-5: #a4a4a4; /* Lighter Gray */
+    --color-6: #f7f7f7; /* Cooler Whitesmoke */
+    /* === Used on Products adn Qualities === */
+    --purple: #ae81ff;
+    --pink: #f9265e;
+    --blue: #66d9eb;
+    
+    /* === Properties ===*/
+    --stdrt-max-width: 960px;
+    /*- produtos span de item: 300px*/
+    --gap-1: 10px;
+    --gap-2: 15px;
+    --gap-3: 60px;
+    --gap-4: 20px;
+    --gap-5: 30px;
+    --stdrt-stroke: 2px solid var(--color-2);
+    --font-size-1: 3rem;
+    --font-size-2: 2.25rem;
+    --border-2: 4px solid white;
+    --border-4: 8px solid; /* Used on Qualities */
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+/* CONTACT */
+.contact-area-bg{    
+    color: white;
+    background: var(--color-2);
+}
+
+.contact-area{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+    margin: 0 auto;
+    max-width: var(--stdrt-max-width);
+    padding: var(--gap-1);
+}
+
+.contact-area span, .contact-area a{
+    display: block;
+}
+
+/* HEADER */
+.header-area-bg{
+    background: var(--color-3);
+}
+
+.header-area{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+    max-width: var(--stdrt-max-width);
+    margin: 0 auto;
+    padding: var(--gap-2) 0;
+}
+
+.header-area .logo h1{
+    margin-left: var(--gap-1);
+    
+    font-size: var(--font-size-2);
+    font-weight: bold;
+}
+
+.header-area ul{
+    display: flex;
+    
+    font-size: 1.2rem;
+}
+
+.header-area li > a{
+    display: block;
+    padding: var(--gap-1);
+}
+
+/* Intro */
+.intro-area{
+    max-width: var(--stdrt-max-width);
+    margin: 0 auto;
+    padding: var(--gap-3) var(--gap-1) var(--gap-3);
+    border-bottom: var(--stdrt-stroke);
+}
+
+.intro-area h1{
+    font-size: var(--font-size-1);
+    font-weight: bold;
+    line-height: 1.3;
+}
+
+.about-area{
+    display: flex;
+    flex-wrap: wrap;
+    
+    max-width: var(--stdrt-max-width);
+    margin: 0 auto;  
+    padding: var(--gap-3) 0;
+    border-bottom: var(--stdrt-stroke);
+}
+
+.about-area-text{
+    flex: 2 1 300px;
+    
+    margin: 0 var(--gap-1);
+}
+
+.about-area-img{
+    flex: 0 1 230px;
+    align-self: flex-start;
+    margin: 0 var(--gap-1);
+}
+
+.about-area img{
+    max-width: 100%;
+}
+
+.about-area-img img + img{
+    margin: 0 0 0 5px;
+}
+
+.about-area h1{
+    margin-bottom: var(--gap-5);
+    
+    font-size: var(--font-size-1);
+}
+
+.about-area p{
+    margin-bottom: var(--gap-4);
+    font-size: 1.25rem;
+    color: var(--color-4);
+}
+
+/* PRODUCTS */
+.products-area{
+    display: flex;
+    flex-wrap: wrap;
+    
+    max-width: var(--stdrt-max-width);
+    margin: 0 auto;
+    padding: var(--gap-3) 0;
+    
+    border-bottom: var(--stdrt-stroke);
+}
+
+.products-area img{
+    display: block;
+    max-width: 100%;
+}
+
+.products-area h1{
+    flex: 1 1 100%;
+    
+    padding: 0 var(--gap-1) var(--gap-3) var(--gap-1);
+    
+    font-size: var(--font-size-1);
+    color: var(--color-1);
+}
+
+.products-area-items{
+    flex: 1 1 220px;
+    align-self: flex-end;
+    
+    margin: var(--gap-1) var(--gap-1) 0;
+    
+    background: var(--color-6);
+}
+
+.products-area-items h2{
+    margin: var(--gap-3) var(--gap-1);
+    
+    font-size: var(--font-size-1);
+    color: var(--color-5);
+}
+
+.products-area .purple{
+    border-top: var(--border-4) var(--purple);
+}
+
+.products-area .pink{
+    border-top: var(--border-4) var(--pink);
+}
+
+.products-area .blue{
+    border-top: var(--border-4) var(--blue);
+}
