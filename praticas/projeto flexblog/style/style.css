@@ -37,7 +37,8 @@
     --stdrt-stroke: 2px solid var(--color-2);
     --font-size-1: 3rem;
     --font-size-2: 2.25rem;
-    --border-2: 4px solid white;
+    --border-2: 4px solid white; /* Used on Prices Plans */
+    --border-3: 3px solid;
     --border-4: 8px solid; /* Used on Qualities */
 }
 
@@ -55,8 +56,13 @@ ul{
     list-style: none;
 }
 
+button,
+input[button]{
+    cursor: pointer;
+}
+
 /* CONTACT */
-.contact-area-bg{    
+.contact-area-bg{
     color: white;
     background: var(--color-2);
 }
@@ -151,6 +157,7 @@ ul{
 .about-area p{
     margin-bottom: var(--gap-4);
     font-size: 1.25rem;
+    line-height: 1.4;
     color: var(--color-4);
 }
 
@@ -172,8 +179,6 @@ ul{
     max-width: var(--stdrt-max-width);
     margin: 0 auto;
     padding: var(--gap-3) 0;
-    
-    border-bottom: var(--stdrt-stroke);
 }
 
 .products-area h1{
@@ -211,4 +216,86 @@ ul{
 
 .products-area .blue{
     border-top: var(--border-4) var(--blue);
+}
+
+/* Plans */
+.prices-area-bg{
+    background: var(--color-6);
+}
+
+.prices-area{
+    display: flex;
+    flex-wrap: wrap;
+
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--gap-3);
+}
+
+.prices-area-plans{
+    flex: 1 1 0;
+    align-self: flex-end;
+    margin: var(--gap-2);
+    padding: var(--gap-2) var(--gap-3);
+
+    border: var(--border-2);
+}
+
+.prices-area h2{
+    margin: var(--gap-1) 0;
+
+    text-align: center;
+    font-size: var(--font-size-2);
+    color: var(--color-5);
+}
+
+.prices-area span{
+    display: block;
+    padding: var(--gap-1) 0;
+   
+    text-align: center;
+    font-size: var(--font-size-2);
+    font-weight: bold;
+    border-top: var(--border-2);
+    border-bottom: var(--border-2);
+}
+
+.prices-area ul{
+    margin: var(--gap-2);
+}
+
+.prices-area li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--gap-1) 0;
+
+    font-style: italic;
+    color: var(--color-4);
+}
+
+.prices-area li::after{
+    display: block;
+    content: '';
+    width: 6px;
+    height: 6px;
+
+    border-radius: 50%;
+    background: var(--color-3);
+}
+
+.prices-area form{
+    display: block;
+}
+
+.prices-area button{
+    width: 100%;
+    padding: var(--gap-1);
+
+    text-align: center;
+    text-transform: uppercase;
+    font-size: var(--font-size-2);
+    font-weight: bold;
+    border: var(--border-3) var(--color-1);
+    background: transparent;
 }
