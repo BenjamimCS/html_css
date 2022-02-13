@@ -6,8 +6,8 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: var(--stdrt-font);/*
-    box-sizing: border-box;*/
+    font-family: var(--stdrt-font);
+    box-sizing: border-box;
 }
 
 :root{
@@ -37,7 +37,7 @@
     --stdrt-stroke: 2px solid var(--color-2);
     --font-size-1: 3rem;
     --font-size-2: 2.25rem;
-    --border-2: 4px solid white; /* Used on Prices Plans */
+    --border-2: 4px solid; /* Used on Prices Plans */
     --border-3: 3px solid;
     --border-4: 8px solid; /* Used on Qualities */
 }
@@ -62,6 +62,10 @@ ul{
 button,
 input[button]{
     cursor: pointer;
+}
+
+input, button{
+    display: block;
 }
 
 /* CONTACT */
@@ -257,7 +261,7 @@ input[button]{
     margin: var(--gap-2);
     padding: var(--gap-2) var(--gap-5);
 
-    border: var(--border-2);
+    border: var(--border-2) white;
 }
 
 .prices-area h2{
@@ -275,8 +279,8 @@ input[button]{
     text-align: center;
     font-size: var(--font-size-2);
     font-weight: bold;
-    border-top: var(--border-2);
-    border-bottom: var(--border-2);
+    border-top: var(--border-2) white;
+    border-bottom: var(--border-2) white;
 }
 
 .prices-area ul{
@@ -341,7 +345,7 @@ input[button]{
     margin-bottom: var(--gap-1);
     padding: 0 var(--gap-1);
 
-    font-size: 1.6rem;
+    font-size: 2.25rem;
     color: var(--color-5);
 }
 
@@ -360,8 +364,9 @@ input[button]{
 .qualities-area li p{
     margin-bottom: var(--gap-2);
 
-    font-size: 1.2rem;
-    color: var(--color-5);
+    line-height: 1.5;
+    font-size: 1.25rem;
+    color: var(--color-4);
 }
 
 /* NEWSLETTER */
@@ -370,6 +375,87 @@ input[button]{
 }
 
 .newsletter-area{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
     max-width: var(--stdrt-max-width);
     margin: 0 auto;
+    padding: var(--gap-3) 0;
+}
+
+.newsletter-area-title{
+    flex: 1 1 210px;
+
+    margin-left: var(--gap-1);
+}
+
+.newsletter-area-title h1{
+    font-size: var(--font-size-1);
+    color: var(--color-5);
+}
+
+.newsletter-area .subtitle{
+    max-width: 240px;
+    margin-bottom: var(--gap-1);
+
+    font-size: 1.2rem;
+    font-style: italic;
+    color: var(--color-5);
+}
+
+.newsletter-area-form{
+    flex: 2 1 220px;
+
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+
+    margin: 0 var(--gap-1);
+}
+
+.newsletter-area-form input{
+    flex: 1 1 220px;
+
+    padding: var(--gap-4) var(--gap-1);
+
+    font-family: var(--stdrt-font);
+    font-size: 1.25rem;
+    font-style: italic;
+    border: var(--border-2) var(--color-3);
+    outline: none;
+    background: transparent;
+}
+
+.newsletter-area-form button{
+    flex: 1 1 260px;
+
+    padding: var(--gap-2);
+
+    font-size: 2.25rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    border: none;
+    background: var(--color-3);
+}
+
+/* FOOTER */
+.footer-area{
+    padding: var(--gap-3);
+    background: var(--color-3);
+}
+
+.footer-area p{
+    text-align: center;
+    font-size: 2.25rem;
+    color: var(--color-2);
+}
+
+.footer-area a{
+    color: var(--color-2);
+}
+
+.footer-area a:hover{
+    color: white;
 }
