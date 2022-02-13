@@ -42,13 +42,16 @@
     --border-4: 8px solid; /* Used on Qualities */
 }
 
+span{
+    display: block;
+}
+
 img{
     display: block;
     max-width: 100%;
 }
 
-a{
-    color: white;
+a, abbr{
     text-decoration: none;
 }
 
@@ -74,7 +77,11 @@ input[button]{
     
     margin: 0 auto;
     max-width: var(--stdrt-max-width);
-    padding: var(--gap-1);
+    padding: var(--gap-1) 0;
+}
+
+.contact-area span{
+    margin: 0 var(--gap-1);
 }
 
 .contact-area span, .contact-area a{
@@ -95,6 +102,11 @@ input[button]{
     max-width: var(--stdrt-max-width);
     margin: 0 auto;
     padding: var(--gap-2) 0;
+
+}
+
+.header-area a{
+    color: white;    
 }
 
 .header-area .logo h1{
@@ -116,7 +128,7 @@ input[button]{
     padding: var(--gap-1);
 }
 
-.header-area a:hover{
+.header-area nav a:hover{
     color: var(--color-2);
 }
 
@@ -124,11 +136,13 @@ input[button]{
 .intro-area{
     max-width: var(--stdrt-max-width);
     margin: 0 auto;
-    padding: var(--gap-3) var(--gap-1) var(--gap-3);
+    padding: var(--gap-3) 0;
     border-bottom: var(--stdrt-stroke);
 }
 
 .intro-area h1{
+    margin-left: var(--gap-1);
+
     font-size: var(--font-size-1);
     font-weight: bold;
     line-height: 1.3;
@@ -141,13 +155,15 @@ input[button]{
     
     max-width: var(--stdrt-max-width);
     margin: 0 auto;  
-    padding: var(--gap-3) var(--gap-1);
+    padding: var(--gap-3) 0;
 
     border-bottom: var(--stdrt-stroke);
 }
 
 .about-area-text{
     flex: 2 1 300px;
+
+    margin-left: var(--gap-1);
 }
 
 .about-area h1{
@@ -167,11 +183,7 @@ input[button]{
     flex: 1 1 150px;
     align-self: flex-start;
     margin: 0 var(--gap-1);
-}/*
-
-.about-area-img img + img{
-    margin: 0 0 0 5px;
-}*/
+}
 
 /* PRODUCTS */
 .products-area{
@@ -180,12 +192,13 @@ input[button]{
     
     max-width: var(--stdrt-max-width);
     margin: 0 auto;
-    padding: var(--gap-3) var(--gap-1);
+    padding: var(--gap-3) 0;
 }
 
 .products-area h1{
     flex: 1 1 100%;
     
+    margin-left: var(--gap-1);
     padding: 0 0 var(--gap-3) 0;
     
     font-size: var(--font-size-1);
@@ -196,14 +209,14 @@ input[button]{
     flex: 1 1 220px;
     align-self: flex-end;
     
-    margin: var(--gap-1) 0 0;
+    margin: var(--gap-1) var(--gap-1) 0;
     
     background: var(--color-6);
-}
+}/*
 
 .products-area-items + .products-area-items{
     margin-left: var(--gap-1);
-}
+}*/
 
 .products-area-items h2{
     margin: var(--gap-3) var(--gap-1);
@@ -304,4 +317,59 @@ input[button]{
     font-weight: bold;
     border: var(--border-3) var(--color-1);
     background: transparent;
+}
+
+/* Qualities */
+.qualities-area{
+    max-width: var(--stdrt-max-width);
+    margin: var(--gap-3) auto;
+    padding: var(--gap-1) 0;
+}
+
+.qualities-area ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.qualities-area ul li{
+    flex: 1 1 300px;
+
+    margin: var(--gap-1);
+}
+
+.qualities-area li h1{
+    margin-bottom: var(--gap-1);
+    padding: 0 var(--gap-1);
+
+    font-size: 1.6rem;
+    color: var(--color-5);
+}
+
+.qualities-area li:nth-of-type(3n+1) h1{
+    border-left: var(--border-4) var(--purple);
+}
+
+.qualities-area li:nth-of-type(3n+2) h1{
+    border-left: var(--border-4) var(--pink);
+}
+
+.qualities-area li:nth-of-type(3n+3) h1{
+    border-left: var(--border-4) var(--blue);
+}
+
+.qualities-area li p{
+    margin-bottom: var(--gap-2);
+
+    font-size: 1.2rem;
+    color: var(--color-5);
+}
+
+/* NEWSLETTER */
+.newsletter-area-bg{
+    background: var(--color-6);
+}
+
+.newsletter-area{
+    max-width: var(--stdrt-max-width);
+    margin: 0 auto;
 }
