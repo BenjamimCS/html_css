@@ -210,7 +210,7 @@ input, button{
 }
 
 .products-area-items{
-    flex: 1 1 220px;
+    flex: 1 1 185px;
     align-self: flex-end;
     
     margin: var(--gap-1) var(--gap-1) 0;
