@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+@media (max-width: 649px){
+    .prices-area-plans:nth-last-child(1){
+        order: -2;
+    }
+
+    .prices-area-plans:nth-last-child(2){
+        order: -1;
+    }
+}
