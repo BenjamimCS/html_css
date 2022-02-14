@@ -167,7 +167,7 @@ input, button{
 .about-area-text{
     flex: 2 1 300px;
 
-    margin-left: var(--gap-1);
+    margin: 0 var(--gap-1);
 }
 
 .about-area h1{
