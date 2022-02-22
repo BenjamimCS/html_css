@@ -84,6 +84,10 @@ input, button{
     padding: var(--gap-1) 0;
 }
 
+.contact-area a{
+    color: white;
+}
+
 .contact-area span{
     margin: 0 var(--gap-1);
 }
