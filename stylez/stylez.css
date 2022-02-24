@@ -19,6 +19,10 @@
     outline: none;
     
     text-transform: lowercase;
+
+    scrollbar-width: thin;
+    scrollbar-color: #707071  transparent;
+    scroll-behavior: smooth;
 }
 
 /* ::selection{
@@ -73,8 +77,14 @@ body{
 }
 
 li {
+    font-family: var(--stdrt-font);
+    
     list-style-type: none;
     list-style-position: inside;
+}
+
+li a {
+    font-family: var(--stdrt-font);
 }
 
 .pipe{
@@ -104,7 +114,7 @@ li {
     width: 13px;
     height: 13px;
 
-    background: url("../.files/imgs/warn logo.svg") no-repeat;
+    background: url("../files/imgs/warn logo.svg") no-repeat;
 }
 
 /* ADVISE */
@@ -235,7 +245,15 @@ li {
 
 /* === MAIN === */
 main{
+/*     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    justify-items: center;
+
     margin: 0 auto;
+    padding: var(--padding);
     max-width: var(--root-container-width);
 }
 
@@ -260,7 +278,21 @@ main h1::before{
 }
 
 main section {
+    /* flex: 1 1 200px; */
+
     margin: var(--gap-3) 0;
+}
+
+.files-list{
+    height: 250px;
+
+    overflow-y: auto;
+
+    scrollbar-width: none;
+}
+
+main section + section{
+    margin-left: var(--gap-4);
 }
 
 main section:nth-of-type(3n+1) h1::before{
@@ -303,4 +335,27 @@ main li::before{
 
 main a{
     color: var(--gray-2);
+}
+
+/* FOOTER */
+footer {
+    padding: var(--gap-1);
+
+    font-size: 1.1em;
+    font-weight: bold;
+    
+    border-top: 3px solid #595959;
+    background: black;
+}
+
+footer p,
+footer a{
+    text-align: center;
+    text-transform: none;
+    color: #595959;
+
+    transition: .5s;
+}
+footer a:hover{
+    color: var(--gray);
 }
