@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+@keyframes movin{
+    from{
+        transform: translate(-4px,3px);
+    } to{
+        transform: translate(0,0);
+        text-shadow: -4px 3px var(--purple);
+    }
+}
