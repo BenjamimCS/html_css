@@ -4,7 +4,7 @@
 
 @font-face{
     font-family: "Neue Machina";
-    src: url("../files/Neue\ Machina\ -\ Free\ for\ Personal\ Use/NeueMachina-Ultrabold.otf") format("opentype");
+    src: url("../Neue\ Machina\ -\ Free\ for\ Personal\ Use/NeueMachina-Ultrabold.otf") format("opentype");
     font-style: normal;
     font-weight: bold;
 }
@@ -114,7 +114,7 @@ li a {
     width: 13px;
     height: 13px;
 
-    background: url("../files/imgs/warn logo.svg") no-repeat;
+    background: url("../imgs/warn logo.svg") no-repeat;
 }
 
 /* ADVISE */
