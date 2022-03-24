@@ -144,7 +144,7 @@ li a {
 .header h1{
     flex: 1 1 0;
 
-    margin: 0 var(--gap-4) 0 0;
+    margin: -14px var(--gap-4) -4px 0;
     
     font-family: var(--stdrt-font);
     font-weight: bold;
@@ -159,7 +159,6 @@ li a {
 .header .subtitle{
     flex: 3 1 370px;
 
-    margin: 13px 0 0 0;
     padding: 5px;
 
     font-weight: bold;
@@ -282,11 +281,15 @@ main h1::before{
     transform: translate(0,2px);
 }
 
-main section {
+main section{
     /* flex: 1 1 200px; */
 
     margin: var(--gap-3) 0;
 }
+
+.files-list::-webkit-scrollbar{
+    width: 0;
+} 
 
 .files-list{
     height: 250px;
@@ -349,15 +352,15 @@ footer {
     font-size: 1.1em;
     font-weight: bold;
     
-    border-top: 3px solid #595959;
-    background: black;
+    /* border-top: 3px solid #595959; */
+    background: #191919;
 }
 
 footer p,
 footer a{
     text-align: center;
     text-transform: none;
-    color: #595959;
+    color: #656565;
 
     transition: .5s;
 }
