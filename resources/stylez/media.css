@@ -1,4 +1,8 @@
 @media (max-width: 519px){
+    header .subtitle{
+        margin-top: 13px;
+    }
+
     main {
         justify-items: start;
     }
