@@ -1,9 +1,11 @@
 @media (max-width: 519px){
-    header .subtitle{
-        margin-top: 13px;
-    }
-
     main {
         justify-items: start;
+    }
+}
+
+@media (max-width: 680px){
+    header .subtitle{
+        margin-top: 13px;
     }
 }
