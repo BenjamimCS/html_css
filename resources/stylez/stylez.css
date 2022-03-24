@@ -25,10 +25,6 @@
     scroll-behavior: smooth;
 }
 
-/* ::selection{
-    background: var(--purple);
-} */
-
 :root{
     /* === FONTS === */
     --stdrt-font: "Neue Machina", Helvetica, sans-serif;
@@ -45,12 +41,6 @@
     --gray: #A6A6A6;
     --gray-2: #D9D9D9;
    
-/*
-    Warn 1
-    Doesn't work good on currently domain
-
-    --warn-1-color: #e03434;*/
-
     /* === Properties === */
     --root-container-width: 1050px;
     --padding: 0 var(--gap-4);
@@ -92,17 +82,11 @@ li a {
     color: var(--gray);
 }
 
-/* .warn-1 {
-    display: flex;
-    align-items: center;
-} */
-
 .warn-1, .warn-1 a{
     display: flex;
     align-items: center;
 
     font-style: italic;
-    /*color: var(--warn-1-color);*/
 }
 
 .warn-1 a::after{
@@ -117,24 +101,12 @@ li a {
     background: url("../imgs/warn logo.svg") no-repeat;
 }
 
-/* ADVISE */
-.advise{
-    padding: 5px;
-
-    font-weight: 500;
-    font-size: 0.95em;
-    text-align: center;
-    background: var(--red);
-}
-
 /* HEADER */
 .header{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-   /*  grid-template-columns: 1fr 3fr;
-    align-items: center;
- */
+
     max-width: var(--root-container-width);
 
     margin: var(--gap-2) auto 0 auto;
@@ -249,9 +221,6 @@ li a {
 
 /* === MAIN === */
 main{
-/*     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap; */
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
     justify-items: center;
@@ -282,8 +251,6 @@ main h1::before{
 }
 
 main section{
-    /* flex: 1 1 200px; */
-
     margin: var(--gap-3) 0;
 }
 
@@ -352,7 +319,6 @@ footer {
     font-size: 1.1em;
     font-weight: bold;
     
-    /* border-top: 3px solid #595959; */
     background: #191919;
 }
 
