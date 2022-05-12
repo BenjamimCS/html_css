@@ -287,8 +287,8 @@ main ul{
 }
 
 main li{
-    display: flex;
-    align-items: center;
+    /* display: flex;
+    align-items: center; */
 
     margin: var(--gap-4) 0;
 
@@ -298,14 +298,26 @@ main li{
 main li::before{
     content: "";
 
-    display: block;
+    display: inline-block;
  
     margin-right: 5px;
+    margin-bottom: 1.6px;
     width: 5px;
     height: 5px;
     
     border-radius: 50%;
+}
+
+main .projects li::before{
     background: var(--purple);
+}
+
+main .challanges li::before{
+    background: var(--green);
+}
+
+main .exercises li:before{
+    background: var(--red);
 }
 
 main a{
