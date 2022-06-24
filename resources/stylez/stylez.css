@@ -165,24 +165,24 @@ li a {
 }
 
 /* === DESCRIPTION ===*/
-.description-area{
+section.description-area {
     max-width: var(--root-container-width);
 
     margin: var(--gap-2) auto;
     padding: var(--padding);
 }
 
-.description-area h1,
-.description-area p{
+section.description-area h1,
+section.description-area p {
     font-family: var(--scnd-font);
     font-weight: normal;
 }
 
-.description-area p{
+section.description-area p {
     color: var(--gray-2);
 }
 
-.description-area .link-to-gh-page-area{
+section.description-area .link-to-gh-page-area {
     display: inline-block;
 
     margin-top: var(--gap-4);
@@ -192,26 +192,26 @@ li a {
     background: linear-gradient(to bottom, white, #cfcfcf);
 }
 
-.description-area .link-to-gh-page-area:hover{
+section.description-area .link-to-gh-page-area:hover {
     background: #cccccc;
 }
 
-.description-area .link-to-gh-page-area:active{
+section.description-area .link-to-gh-page-area:active {
     background: #c2c1c1;
 }
 
-.description-area .link-to-gh-page-area-content{
+section.description-area .link-to-gh-page-area-content {
     display: flex;
     align-items: center;    
 
     padding: 5px 10px;
 }
 
-.description-area .link-to-gh-page-area svg{
+section.description-area .link-to-gh-page-area svg {
     height: 20px;
 }
 
-.description-area .link-to-gh-page-area p{
+section.description-area .link-to-gh-page-area p {
     margin-left: 5px;
 
     font-family: Helvetica, Arial, sans-serif;
