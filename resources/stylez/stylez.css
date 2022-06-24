@@ -250,25 +250,52 @@ main h1::before {
     transform: translate(0,2px);
 }
 
-main section{
-    margin: var(--gap-3) 0;
+main a{
+    color: var(--gray-2);
 }
 
-.files-list::-webkit-scrollbar{
-    width: 0;
-} 
+main ul{
+    margin: var(--gap-4) 0 0 var(--gap-4);
+}
 
-.files-list{
-    height: 250px;
+main li{
+    margin: var(--gap-4) 0;
+    
+    font-weight: bold;
+}    
 
-    overflow-y: auto;
+main li::before{
+    content: "";
+    
+    display: inline-block;
+    
+    margin-right: 5px;
+    margin-bottom: 1.6px;
+    width: 5px;
+    height: 5px;
+    
+    border-radius: 50%;
+}
 
-    scrollbar-width: none;
+main section {
+    margin: var(--gap-3) 0;
 }
 
 main section + section {
     margin-left: var(--gap-4);
 }
+
+main section.files-list {
+    height: 250px;
+    
+    overflow-y: auto;
+    
+    scrollbar-width: none;
+}
+
+main section.files-list::-webkit-scrollbar {
+    width: 0;
+} 
 
 main section:nth-of-type(3n+1) h1::before {
     background: var(--purple);
@@ -282,32 +309,6 @@ main section:nth-of-type(3n+3) h1::before {
     background: var(--red);
 }
 
-main ul{
-    margin: var(--gap-4) 0 0 var(--gap-4);
-}
-
-main li{
-    /* display: flex;
-    align-items: center; */
-
-    margin: var(--gap-4) 0;
-
-    font-weight: bold;
-}
-
-main li::before{
-    content: "";
-
-    display: inline-block;
- 
-    margin-right: 5px;
-    margin-bottom: 1.6px;
-    width: 5px;
-    height: 5px;
-    
-    border-radius: 50%;
-}
-
 main .projects li::before{
     background: var(--purple);
 }
@@ -318,10 +319,6 @@ main .challanges li::before{
 
 main .exercises li:before{
     background: var(--red);
-}
-
-main a{
-    color: var(--gray-2);
 }
 
 /* FOOTER */
