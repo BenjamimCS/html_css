@@ -272,7 +272,7 @@ main section + section {
     margin-left: var(--gap-4);
 }
 
-main section.files-list {
+main section > .files-list {
     height: 250px;
     
     overflow-y: auto;
@@ -280,7 +280,7 @@ main section.files-list {
     scrollbar-width: none;
 }
 
-main section.files-list::-webkit-scrollbar {
+main section > .files-list::-webkit-scrollbar {
     width: 0;
 } 
 
