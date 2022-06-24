@@ -2,14 +2,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
 
-@font-face{
+@font-face {
     font-family: "Neue Machina";
     src: url("../Neue\ Machina\ -\ Free\ for\ Personal\ Use/NeueMachina-Ultrabold.otf") format("opentype");
     font-style: normal;
     font-weight: bold;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
 
@@ -25,7 +25,7 @@
     scroll-behavior: smooth;
 }
 
-:root{
+:root {
     /* === FONTS === */
     --stdrt-font: "Neue Machina", Helvetica, sans-serif;
     --scnd-font: "Bree Serif", serif;
@@ -54,13 +54,13 @@
 }
 
 /* === GENERAL SETS === */
-abbr, a{
+abbr, a {
     display: inline-block;
     color: var(--yellow);
     text-decoration: none;
 }
 
-body{
+body {
     color: white;
     font-family: var(--stdrt-font);
     background: var(--bg);
@@ -77,19 +77,19 @@ li a {
     font-family: var(--stdrt-font);
 }
 
-.pipe{
+.pipe {
     font-weight: bolder;
     color: var(--gray);
 }
 
-.warn-1, .warn-1 a{
+.warn-1, .warn-1 a {
     display: flex;
     align-items: center;
 
     font-style: italic;
 }
 
-.warn-1 a::after{
+.warn-1 a::after {
     display: block;
     content: "";
 
@@ -102,7 +102,7 @@ li a {
 }
 
 /* HEADER */
-.header{
+.header {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -113,7 +113,7 @@ li a {
     padding: 0 10px;
 }
 
-.header h1{
+.header h1 {
     flex: 1 1 0;
 
     margin: -14px var(--gap-4) -4px 0;
@@ -128,7 +128,7 @@ li a {
     animation-fill-mode: forwards;
 }
 
-.header .subtitle{
+.header .subtitle {
     flex: 3 1 370px;
 
     padding: 5px;
@@ -142,23 +142,23 @@ li a {
 }
 
 /* === CAPTIONS ===*/
-.captions-area{
+.captions-area {
     margin: var(--gap-2) auto;
     padding: var(--padding);
     max-width: var(--root-container-width);
 }
 
 .captions-area h1,
-.captions-area p{
+.captions-area p {
     font-family: var(--stdrt-font);
     font-weight: bold;
 }
 
-.captions-area ul{
+.captions-area ul {
     margin: var(--gap-4) 0 0 var(--gap-4);
 }
 
-.captions-area li{
+.captions-area li {
     list-style-type: square;
     font-weight: bold;
     color: #D11717;
@@ -220,7 +220,7 @@ li a {
 }
 
 /* === MAIN === */
-main{
+main {
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
     justify-items: center;
@@ -238,7 +238,7 @@ main h1 {
     font-size: 2em;
 }
 
-main h1::before{
+main h1::before {
     display: inline-block;
     content: "";
 
@@ -266,19 +266,19 @@ main section{
     scrollbar-width: none;
 }
 
-main section + section{
+main section + section {
     margin-left: var(--gap-4);
 }
 
-main section:nth-of-type(3n+1) h1::before{
+main section:nth-of-type(3n+1) h1::before {
     background: var(--purple);
 }
 
-main section:nth-of-type(3n+2) h1::before{
+main section:nth-of-type(3n+2) h1::before {
     background: var(--green);
 }
 
-main section:nth-of-type(3n+3) h1::before{
+main section:nth-of-type(3n+3) h1::before {
     background: var(--red);
 }
 
@@ -335,13 +335,13 @@ footer {
 }
 
 footer p,
-footer a{
+footer a {
     text-align: center;
     text-transform: none;
     color: #656565;
 
     transition: .5s;
 }
-footer a:hover{
+footer a:hover {
     color: var(--gray);
 }
