@@ -69,7 +69,7 @@ body {
 li {
     font-family: var(--stdrt-font);
     
-    list-style-type: none;
+    list-style-type: disc;
     list-style-position: inside;
 }
 
@@ -264,19 +264,6 @@ main li{
     font-weight: bold;
 }    
 
-main li::before{
-    content: "";
-    
-    display: inline-block;
-    
-    margin-right: 5px;
-    margin-bottom: 1.6px;
-    width: 5px;
-    height: 5px;
-    
-    border-radius: 50%;
-}
-
 main section {
     margin: var(--gap-3) 0;
 }
@@ -309,16 +296,16 @@ main section:nth-of-type(3n+3) h1::before {
     background: var(--red);
 }
 
-main .projects li::before{
-    background: var(--purple);
+main section.projects li::marker {
+    color: var(--purple);
 }
 
-main .challanges li::before{
-    background: var(--green);
+main section.challanges li::marker {
+    color: var(--green);
 }
 
-main .exercises li:before{
-    background: var(--red);
+main section.exercises li::marker {
+    color: var(--red);
 }
 
 /* FOOTER */
