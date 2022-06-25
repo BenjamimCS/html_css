@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* === GENERAL SETS === */
+input {
+}
+
+input[type="input"] {
+    width: 100%;
+}
+
+li {
+    list-style-position: inside;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* === HEADER === */
+.header {
+
+}
