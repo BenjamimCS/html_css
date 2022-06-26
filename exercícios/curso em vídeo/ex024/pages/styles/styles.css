@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+/* === GENERAL SETS === */
+* {
+    font-family: Helvetica, Arial, sans-serif;
+    color: whitesmoke;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+iframe {
+    display: block;
+
+    margin: 0 auto;
+    width: 87%;
+    height: 300px;
+
+    border: 2px solid #dddddd;
+}
+
+/* === GENERAL SETS === */
+
+body {
+    background: #252525;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+nav {
+    padding: 0 10px;
+    background: #658585;
+
+    border-right: 1px solid rgba(187, 187, 187, 0.418);
+    border-bottom: 1px solid rgba(187, 187, 187, 0.418);
+    border-radius: 0 0 3px 0;
+}
+
+nav > a {
+    padding: 10px 3px;
+
+}
+
+nav > a:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
