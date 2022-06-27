@@ -104,4 +104,7 @@ a {
     font-size: 1rem;
     font-weight: 600;
 }
+
+.header .toggle-view-mode {
+    width: 150px;
 }
