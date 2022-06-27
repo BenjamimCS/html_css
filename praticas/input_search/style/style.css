@@ -5,6 +5,14 @@
 
     margin: 0;
     padding: 0;
+
+    font-family: var(--stdrt-font);
+}
+
+/* === VAR === */
+:root {
+    /* === FONTS === */
+    --stdrt-font: Helvetica, Arial, sans-serif;
 }
 
 /* === GENERAL SETS === */
