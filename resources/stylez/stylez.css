@@ -82,15 +82,12 @@ li a {
     color: var(--gray);
 }
 
-.warn-1, .warn-1 a {
-    display: flex;
-    align-items: center;
-
+li.warn-1, li.warn-1 a {
     font-style: italic;
 }
 
-.warn-1 a::after {
-    display: block;
+li.warn-1 a::after {
+    display: inline-block;
     content: "";
 
     margin-left: 5px;
@@ -296,7 +293,7 @@ main section:nth-of-type(3n+3) h1::before {
     background: var(--red);
 }
 
-main section.projects li::marker {
+main section.pratices li::marker {
     color: var(--purple);
 }
 
