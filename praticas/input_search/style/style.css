@@ -20,6 +20,21 @@ body {
     background: #dedede
 }
 
+svg {
+    display: block;
+}
+
+button {
+    display: block;
+
+    outline: none;
+    border: none;
+
+    cursor: pointer;
+
+    background: none;
+}
+
 input {
     outline: none;
     border: 0;
@@ -88,6 +103,9 @@ a {
 .header .search-area {
     flex: 1 2 auto;
 
+    display: flex;
+    align-items: center;
+
     padding: 0 8px;
 
 }
@@ -95,14 +113,37 @@ a {
 .header .search-area,
 .header .search-area button {
     border: 2px solid #0a0a0a;
+
+    background: #ffffff;
+}
+
+.header .search-area .button-group button {
+    margin: 0 0 0 5px;
+    padding: 4px 5px;
 }
 
 .header .search-area input {
-    padding: 5px 0;
+    padding: 8px 0;
     width: 100%;
 
     font-size: 1rem;
     font-weight: 600;
+}
+
+.header .search-area .button-group {
+    display: flex;
+}
+
+.header .search-area .button-group svg {
+    height: 14px;
+}
+
+.header .search-area .button-group .clear-btn {
+    padding: 4px 6px;
+}
+
+.header .search-area .button-group .clear-btn svg {
+    height: 12px;
 }
 
 .header .toggle-view-mode {
