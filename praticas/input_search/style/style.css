@@ -24,6 +24,17 @@ svg {
     display: block;
 }
 
+button {
+    display: block;
+
+    outline: none;
+    border: none;
+
+    cursor: pointer;
+
+    background: none;
+}
+
 input {
     outline: none;
     border: 0;
