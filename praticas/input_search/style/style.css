@@ -117,6 +117,9 @@ a {
     background: #ffffff;
 }
 
+.header .search-area .button-group button {
+    margin: 0 0 0 5px;
+    padding: 4px 5px;
 }
 
 .header .search-area input {
