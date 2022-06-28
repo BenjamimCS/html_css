@@ -134,6 +134,10 @@ a {
     display: flex;
 }
 
+.header .search-area .button-group svg {
+    height: 14px;
+}
+
 .header .toggle-view-mode {
     width: 150px;
 }
