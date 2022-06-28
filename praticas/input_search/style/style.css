@@ -138,6 +138,14 @@ a {
     height: 14px;
 }
 
+.header .search-area .button-group .clear-btn {
+    padding: 4px 6px;
+}
+
+.header .search-area .button-group .clear-btn svg {
+    height: 12px;
+}
+
 .header .toggle-view-mode {
     width: 150px;
 }
