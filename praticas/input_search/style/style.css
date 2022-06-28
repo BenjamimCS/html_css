@@ -20,6 +20,10 @@ body {
     background: #dedede
 }
 
+svg {
+    display: block;
+}
+
 input {
     outline: none;
     border: 0;
