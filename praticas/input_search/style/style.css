@@ -130,6 +130,10 @@ a {
     font-weight: 600;
 }
 
+.header .search-area .button-group {
+    display: flex;
+}
+
 .header .toggle-view-mode {
     width: 150px;
 }
