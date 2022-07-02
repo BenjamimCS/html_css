@@ -105,6 +105,8 @@ li.warn-1 a::after {
     flex-wrap: wrap;
 
     max-width: var(--root-container-width);
+    
+    user-select: none;
 
     margin: var(--gap-2) auto 0 auto;
     padding: 0 10px;
@@ -119,7 +121,6 @@ li.warn-1 a::after {
     font-weight: bold;
     font-size: 3.25em;
 
-    
     transform: translate(-4px, 3px);
     animation: movin .685s ease-in-out .5s;
     animation-fill-mode: forwards;
