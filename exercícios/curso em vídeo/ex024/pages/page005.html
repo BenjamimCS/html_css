@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JS Infected</title>
+	<link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+	<a href="#" onclick="spawn()">Clique here</a> 
+	<script>
+		function spawn() {
+			let count = 3;
+			alert("Hacked");
+
+			for (; true; ) {
+				if(count === 0) count = 3;
+
+				alert(count--);
+			}
+		}
+	</script>
+</body>
+</html>
+
