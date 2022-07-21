@@ -1,9 +1,9 @@
 // [x] Calcular posição atual e a partir dela compor o deslocamento
 // 		R= MouseElement.movementX e MouseElement.movementY
 
-dragElement(document.querySelector(".inform-bar"))
+drag(document.querySelector(".inform-bar"))
 
-function dragElement(element) {
+function drag(element) {
 	let handle = document.querySelector(".handle");
 	let initialPosition = -180
 	
