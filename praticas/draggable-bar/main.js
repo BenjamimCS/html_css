@@ -40,9 +40,7 @@ function drag(element) {
 
 		if(modifyPosition > 0) modifyPosition = 0
 		if(modifyPosition >= -180) element.style.transform = `translateY(${modifyPosition}px)`
-		else {
-			modifyPosition = -180
-		}
+		else modifyPosition = -180
 
 		console.log("\n","finalResult2", modifyPosition)
 
