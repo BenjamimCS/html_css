@@ -27,11 +27,6 @@ function drag(element) {
 
 
 	function dragElementOnDown(mouse,box) {
-		// variavel com <valor-inicial>
-			// se for maior que 0 para
-			// se for igual a <valor-inicial> para
-			// sen a execucao continua
-
 		console.log("initialPosition: ", initialPosition, "\n",
 					"modifyPosition: ",  modifyPosition,  "\n",
 					"mouseMovement: ",   mouse.movementY, "\n",
