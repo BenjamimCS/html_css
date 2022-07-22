@@ -1,5 +1,5 @@
-// [x] Calcular posição atual e a partir dela compor o deslocamento
-// 		R= MouseElement.movementX e MouseElement.movementY
+//  [x] Calcular posição atual e a partir dela compor o deslocamento
+//    R= MouseElement.movementX e MouseElement.movementY
 
 drag(document.querySelector(".inform-bar"))
 
