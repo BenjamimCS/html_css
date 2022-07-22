@@ -7,7 +7,7 @@ function drag(element) {
 	let handle = document.querySelector(".handle");
 	let initialPosition = -180
 	
-	let modifyPosition = 0
+	let modifyPosition
 	let dragElement = false
 
 	handle.addEventListener('mousedown', () => {
@@ -30,10 +30,10 @@ function drag(element) {
 		console.log("initialPosition: ", initialPosition, "\n",
 					"modifyPosition: ",  modifyPosition,  "\n",
 					"mouseMovement: ",   mouse.movementY, "\n",
-					"offset: ",			 modifyPosition === 0 ? initialPosition + mouse.movementY : modifyPosition + mouse.movementY
+					"offset: ",			 modifyPosition === undefined ? initialPosition + mouse.movementY : modifyPosition + mouse.movementY
 		)
 
-		modifyPosition = modifyPosition === 0 ? initialPosition + mouse.movementY : modifyPosition + mouse.movementY
+		modifyPosition = modifyPosition === undefined ? initialPosition + mouse.movementY : modifyPosition + mouse.movementY
 
 
 		console.log("\n","finalResult1", modifyPosition)
