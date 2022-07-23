@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form - 004</title>
+</head>
+<body>
+  <main>
+    <h1>Form example</h1>
+    <form action="register.php" method="get">
+      <fieldset>
+        <legend>Personal Date</legend>
+        <p>
+          <label for="iname">Name:</label>
+          <input type="text" name="name" id="iname" autocomplete="name" placeholder="i.e. John" required>
+        </p>
+        <p>
+          <label for="iemail">Email: </label>
+          <input type="email" name="email" id="iemail" autocomplete="email" placeholder="john@emailsev.com" required>
+        </p>
+        <p>
+          <label for="itel">Phone: </label>
+          <input type="tel" name="tel" id="itel" autocomplete="tel-local" pattern="^\(\d{3}\)\d{3}-\d{4}$" placeholder="(555) 555-5555" required>
+        </p>
+      </fieldset>
+      <p>
+        <input type="submit" value="Sign Up"><input type="reset" value="Clear">
+      </p>
+    </form>
+  </main> 
+</body>
+</html>
