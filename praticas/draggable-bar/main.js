@@ -11,9 +11,11 @@ function drag(element) {
 	let dragElement = false
 
 	handle.addEventListener('mousedown', () => {
-		dragElement = true
+    if(!dragElement) {
+      dragElement = true
 
-		console.log(dragElement)
+      console.log(dragElement)
+    }
 	})
 
 	window.addEventListener('mousemove', (mouse) => {
@@ -21,8 +23,11 @@ function drag(element) {
 	})
 
 	window.addEventListener('mouseup', () => {
-		dragElement = false
-		console.log(dragElement)
+		if(dragElement) {
+      dragElement = false
+
+		  console.log(dragElement)
+    }
 	})
 
 
