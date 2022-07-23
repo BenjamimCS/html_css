@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form - 003</title>
+</head>
+<body>
+  <main>
+    <form action="register.php" method="get">
+      <p>
+        <label for="iname">Name</label>
+        <input type="text" name="name" id="iname" placeholder="First Name" min-length="4" max-length="15" required>
+      </p>
+      <p>
+        <label for="iaverage">
+          <input type="number" name="average" id="iaverage" placeholder="Between 0 - 10" step="0.1" min="0" max="10" required>
+        </label>
+      </p>
+      <p>
+        <label for="imonth">School Year</label>
+        <input type="month" name="month" id="imonth" required>
+      </p>
+      <p>
+        <label for="iteset">Test Day</label>
+        <input type="date" required>
+      </p>
+      <p>
+        <label for="itime">Test Hour</label>
+        <input type="time" name="time" id="itime">
+      </p>
+      <p>
+        <input type="submit" value="Submit"> <input type="reset" value="Clear">
+      </p>
+    </form>
+  </main>
+</body>
+</html>
