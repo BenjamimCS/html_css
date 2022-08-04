@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+/* === For Printer Devices === */
+
+* {
+  margin: 10px;
+  padding: 10px;
+
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1em;
+  list-style: 1.5em;
+}
+
