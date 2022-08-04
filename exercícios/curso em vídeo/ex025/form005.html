@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Form - 005</title>
+</head>
+<body>
+	<main>
+		<h1>Radio & Checkbox</h1>
+
+		<form action="register.php" method="GET">
+		<fieldset>
+			<legend>Gender</legend>
+			<input id="imale" type="radio" name="gender" value="male" checked>
+			<label for="imale">Male</label><br>
+			<input id="ifem" type="radio" name="gender" value="female">
+			<label for="ifem">Female</label>
+		</fieldset>
+		<fieldset>
+			<legend>Favorite Sports</legend>
+			<input id="ibasketball" type="checkbox" name="basketball">
+			<label for="ibasketball">Basketball</label><br>
+
+			<input id="ibaseball" type="checkbox" name="baseball">
+			<label for="ibaseball">Baseball</label><br>
+
+			<input id="isoccer" type="checkbox" name="soccer">
+			<label for="isoccer">Soccer</label><br>
+		</fieldset>
+		<button>Submit</button>
+		</form>
+	</main>
+</body>
+</html>
