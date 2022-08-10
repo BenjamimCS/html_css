@@ -1,11 +1,11 @@
 //  [x] Calcular posição atual e a partir dela compor o deslocamento
 //    R= MouseElement.movementX e MouseElement.movementY
 
-drag(document.querySelector(".inform-bar"))
+drag(document.querySelector(".inform-bar"),-180)
 
-function drag(element) {
+function drag(element, limit) {
 	let handle = document.querySelector(".handle");
-	let initialPosition = -180
+	let initialPosition = limit
 	
 	let modifyPosition
 	let dragElement = false
@@ -44,8 +44,8 @@ function drag(element) {
 		console.log("\n","finalResult1", modifyPosition)
 
 		if(modifyPosition > 0) modifyPosition = 0
-		if(modifyPosition >= -180) element.style.transform = `translateY(${modifyPosition}px)`
-		else modifyPosition = -180
+		if(modifyPosition >= initialPosition) element.style.transform = `translateY(${modifyPosition}px)`
+		else modifyPosition = initialPosition
 
 		console.log("\n","finalResult2", modifyPosition)
 
