@@ -99,12 +99,15 @@ main {
 
 article blockquote h1 {
   margin: 20px 0;
+
+  font-size: 1.8em;
 }
 
 article blockquote p {
   margin-bottom: 20px;
 
-  font-size: 1.113em;
+  font-size: 1.1em;
+  font-weight: 400;
   text-align: justify;
   hyphens: auto;
 }
