@@ -30,4 +30,24 @@ body, html {
   background-color: white;
 }
 
+/* === STYLIZATION === */
+#publisher {
+  padding: 5px;
+
+  width: 230px;
+
+  user-select: none;
+
+  border-left: 4px solid black;
+}
+
+.profile {
+  margin-right: 5px;
+  border-radius: 50%;
+}
+
+.date {
+  font-size: 0.8em;
+}
+
 }
