@@ -71,6 +71,8 @@ menu {
 
 #burger-menu {
   padding: 5px 0;
+
+  cursor: pointer;
   background:rgb(46, 46, 46);
 }
 
@@ -83,7 +85,6 @@ menu {
 
   color: whitesmoke;
   text-align: center !important;
-  cursor: pointer;
 }
 
 menu > ul {
