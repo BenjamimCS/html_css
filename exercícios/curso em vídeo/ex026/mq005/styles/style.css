@@ -50,4 +50,40 @@ body, html {
   font-size: 0.8em;
 }
 
+/* == HEADER == */
+header {
+  background-color: var(--color1);
+}
+
+header h1 {
+  padding: 30px 0;
+
+  font-size: 2em;
+  color: whitesmoke;
+  text-align: center;
+}
+
+menu {
+  box-sizing: border-box;
+
+  border: 3px solid var(--color1);
+}
+
+menu > ul a {
+  padding: 10px;
+
+  text-align: center;
+
+  color: black;
+  background-color: var(--color5);
+}
+
+menu ul > li:nth-of-type(n+2) a {
+  border-top: 2px solid rgb(87, 87, 87);
+}
+
+menu > ul a:hover {
+  background-color: rgb(230, 230, 230);
+}
+
 }
