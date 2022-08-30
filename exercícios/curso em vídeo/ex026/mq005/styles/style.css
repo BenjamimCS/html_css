@@ -69,6 +69,27 @@ menu {
   border: 3px solid var(--color1);
 }
 
+#burger-menu {
+  padding: 5px 0;
+  background:rgb(46, 46, 46);
+}
+
+#burger-menu:hover {
+  background-color: rgb(53, 53, 53)
+}
+
+#burger-menu #burger {
+  display: block;
+
+  color: whitesmoke;
+  text-align: center !important;
+  cursor: pointer;
+}
+
+menu > ul {
+  display: none;
+}
+
 menu > ul a {
   padding: 10px;
 
