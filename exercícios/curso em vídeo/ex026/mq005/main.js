@@ -14,4 +14,14 @@ burgerMenu.addEventListener("click", () => {
     menu.style.display = "none"
   }
 })
+
+window.addEventListener("resize", () => {
+  if(window.innerWidth >= 833) {
+    menuIsOpen = true
+    menu.style.display = "block"
+  } else {
+    menuIsOpen = false
+    menu.style.display = "none"
+  }
+})
 })()
