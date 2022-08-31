@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 833px) {
+  /* == Header == */
+  #burger-menu {
+    display: none;
+  }
+
+  menu {
+    overflow: hidden;
+  }
+
+  menu ul {
+    display: block;
+
+    margin: 0 auto;
+    max-width: 810px;
+
+    text-align: center;
+  }
+
+  menu ul > li {
+    display: inline-block;
+
+    transform: translateY(8px);
+    transition: transform .4s ease-out;
+  }
+
+  menu ul > li:hover {
+    transform: translateY(0);
+  }
+
+  menu ul > li:nth-of-type(n+2) a {
+    margin-left: 5px;
+    border-top: none;
+  }
+  
+  /* == Main == */
+  main {
+    max-width: 910px;
+  }
+}
