@@ -55,7 +55,7 @@
 
 /* === GENERAL SETS === */
 abbr, a {
-    display: inline-block;
+    /* display: inline-block; */
     color: var(--yellow);
     text-decoration: none;
 }
