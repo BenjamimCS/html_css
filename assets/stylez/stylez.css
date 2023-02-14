@@ -254,7 +254,7 @@ main a{
 }
 
 main ul{
-    margin: var(--gap-4) 0 0 var(--gap-4);
+    margin: var(--gap-4) 0 0 0;
 }
 
 main li{
@@ -262,6 +262,11 @@ main li{
     
     font-weight: bold;
 }    
+
+main li > ul {
+    padding-left: var(--gap-4);
+    border-left: 2px solid var(--gray-3);
+}
 
 main section {
     margin: var(--gap-3) 0;
@@ -273,6 +278,8 @@ main section + section {
 
 main section > .files-list {
     height: 250px;
+
+    padding-left: 10px;
     
     overflow-y: auto;
     
