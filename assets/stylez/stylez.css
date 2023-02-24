@@ -114,8 +114,8 @@ li.warn-1 a::after {
     
     user-select: none;
 
-    margin: var(--gap-2) auto 0 auto;
-    padding: 0 10px;
+    margin: 0 auto;
+    padding: var(--gap-2) 10px 0;
 }
 
 .header h1 {
