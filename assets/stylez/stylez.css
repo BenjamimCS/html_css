@@ -25,6 +25,10 @@
     scroll-behavior: smooth;
 }
 
+html {
+  background-color: var(--gray-4);
+}
+
 :root {
     /* === FONTS === */
     --stdrt-font: "Neue Machina", Helvetica, sans-serif;
