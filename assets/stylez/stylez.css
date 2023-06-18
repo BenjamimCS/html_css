@@ -30,6 +30,7 @@ html {
 }
 
 button {
+  border: none;
   font-size: 1em;
 }
 
@@ -195,28 +196,27 @@ section.description-area .link-to-gh-page-area {
 
     margin-top: var(--gap-4);
 
-    border: 1px solid gray;
-    border-radius: 5px;
-    background: linear-gradient(to bottom, white, #cfcfcf);
+    border-left-width: 0;
+    border-left-style: solid;
+    border-left-color: var(--purple);
+    background-color: var(--sub-t-bg);
+    transition: border-left .2s;
 }
 
 section.description-area .link-to-gh-page-area:hover {
-    background: #cccccc;
-}
-
-section.description-area .link-to-gh-page-area:active {
-    background: #c2c1c1;
+  border-left-width: 8px;
 }
 
 section.description-area .link-to-gh-page-area-content {
     display: flex;
     align-items: center;    
 
-    padding: 5px 10px;
+    padding: 8px 10px;
 }
 
 section.description-area .link-to-gh-page-area svg {
     height: 20px;
+    fill: var(--gray-2);
 }
 
 section.description-area .link-to-gh-page-area p {
@@ -224,7 +224,7 @@ section.description-area .link-to-gh-page-area p {
 
     font-family: Helvetica, Arial, sans-serif;
     font-weight: bold;
-    color: black;
+    color: var(--gray-2);
 }
 
 /* === MAIN === */
