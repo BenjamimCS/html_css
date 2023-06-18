@@ -29,6 +29,10 @@ html {
   background-color: var(--gray-4);
 }
 
+button {
+  font-size: 1em;
+}
+
 :root {
     /* === FONTS === */
     --stdrt-font: "Neue Machina", Helvetica, sans-serif;
